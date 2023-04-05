@@ -158,6 +158,10 @@ h2 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+.no-notes {
+  text-align: center;
+}
+
 
 @media screen and (min-width: 1439px) {
   h2 {

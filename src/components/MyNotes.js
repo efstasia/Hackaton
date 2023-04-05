@@ -21,6 +21,7 @@ export const MyNotes = () => {
         {name: 'WordPress'},
         {name: 'React'},
         {name: 'Todos'},
+        {name: 'Functions'},
     ]
 
     const handleNoteChange = (event) => {
@@ -45,14 +46,14 @@ export const MyNotes = () => {
             <form className="notes-form" onSubmit={addNote}>
                 <input required placeholder="Write a note here.." type='text' value={newNote} onChange={handleNoteChange} />
                 <select className="note-category" value={category} onChange={(e) => setCategory(e.target.value)}>
-                <option value="">Add category</option>
+                <option value="">Category</option>
                     {categories.map((category) => (
                         <option key={category.name} value={category.name}>{category.name}</option>
                     ))}
                 </select>
                 <button className="btn centered" type="submit">Add Note</button>
             </form>
-            { !notes.length ? <div><p>No notes are added</p></div> : 
+            { !notes.length ? <div className="no-notes"><p>No notes are added yet</p></div> : 
             <div>
             <ul className="notes-list">
             {notes.map((note, index) => (
