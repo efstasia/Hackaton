@@ -6,7 +6,7 @@ export const Select = () => {
 
     const options = [
         {value: 'bitbucket', label: 'watch our repos', url: 'https://bitbucket.org/qualitythinkers/workspace/overview'},
-        {value: 'blikk > tasks', label: 'check my tasks', url: ''},
+        {value: 'blikk > tasks', label: 'check my tasks', url: 'https://app.blikk.com/Task/Mine'},
         {value: 'confluence', label: 'do a first WP setup', url: 'https://qualitythink.atlassian.net/wiki/spaces/~453084211/pages/2395013125/3.1.+WP+Starter+-+First+setup'},
         {value: 'retro', label: 'join the retro', url: 'https://easyretro.io/publicboard/51eaRmhD5Wc9UA3PGvxhjQfu0sB2/9c6d01c1-b714-4ec5-abb3-ea7a94b6a582'},
         {value: 'sync-DB', label: 'sync my WP database', url: 'https://qualitythink.atlassian.net/wiki/spaces/IH/pages/2192113665/H+lla+databasen+uppdaterad+DEV+lokala'},
